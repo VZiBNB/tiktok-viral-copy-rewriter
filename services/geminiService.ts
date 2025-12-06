@@ -1,7 +1,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { GenerateResponse } from "../types";
 
-const apiKey = process.env.API_KEY;
+const apiKey = import.meta.env.VITE_GOOGLE_API_KEY;
 
 // Use gemini-2.5-flash for fast, effective text generation
 const MODEL_NAME = "gemini-2.5-flash";
